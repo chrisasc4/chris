@@ -1,0 +1,17 @@
+body {
+    
+    background-image: url("http://www.mobygames.com/images/covers/l/85327-madden-nfl-95-genesis-front-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+p {
+    color:black;
+}
+
+.Gordon {
+    
+ width: 70%;
+
+}

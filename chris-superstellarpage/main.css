@@ -1,0 +1,14 @@
+body{
+	background: url("https://aotw-pd.s3.amazonaws.com/media-youtube/hJNf1i8FTNs.jpg");
+	background-size: cover;
+	/*background-position: auto;*/
+	background-repeat: no-repeat;
+}
+#topBanner{
+	text-align: center;
+	color:whitesmoke;
+}
+
+#topBanner h1 {
+	color: yellow;
+}
