@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+  <title> </title>
+    <style>
+    div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    }
+
+   div.gallery:hover {
+    border: 1px solid #777;
+    }
+
+   div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+   div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+   li {
+        float: left;
+    }
+
+   li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+   li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+    }
+    
+   li.dropdown {
+    display: inline-block;
+    }
+
+
+[8:12] 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9 ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+   .dropdown-content a:hover {background-color: #f1f1f1 }
+
+   .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+   .active {
+    background-color: #4CAF50 ;
+    </style>
+  <style>
+    body {
+      text-align: center;
+      background: url("https://s-media-cache-ak0.pinimg.com/originals/e2/3f/a6/e23fa65dcedeb00cc5f9ac4ca015699d.jpg (1MB)
+");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: "Times New Roman", Times, serif;
+    }
+    p {
+      font-size: 25px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+    
+ </style>
+</head>
+
+
+[8:12] 
+<body>
+    <ul>
+  <li><a href="#home">JPAC</a></li>
+  <li><a href="#news">New Releases</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More information</a>
+    <div class="dropdown-content">
+      <a href="http://www.nps.k12.nj.us/laf/">Lafayette St. School</a>
+      <a href="https://www.newarka.edu/page">Newark Academy</a>
+      <a href="http://www.upenn.edu/">University of Pennsylvania (hopefully)</a>
+    </div>
+    </li>
+    </ul>
+
+   <img src="headshfsdot.jpg">
+
+   <p>Hi! I'm Anthony, a NJ-based student. Click below for more information about me!</p>
+
+   <div class="gallery">
+  <a target="_blank" href="http://www.allstarcode.org/">
+  
+    <img src="https://overwatch-a.akamaihd.net/img/logos/overwatch-share-3d5a268515283007bdf3452e877adac466d579f4b44abbd05aa0a98aba582eeaebc4541f1154e57ec5a43693345bebda953381a7b75b58adbd29d3f3eb439ad2.jpg " alt=All Star Code" width="300" height="200">
+  </a>
+  <div class="desc">All Star Code is a nonprofit computer science education organization focused on motivated Black and Latino young men. Few organizatoins prepare this undeserved group for careers in the innovation economy.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.google.com/">
+    <img src="googleLogo.svg" alt="Google" width="600" height="400">
+  </a>
+  <div class="desc">Google is an American multinational technology company that specializes in Internet-related services and products. These include online advertising technologies, search, cloud computing, software, and hardware.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.microsoft.com/en-us/store/b/home?WT.mc_id=pointitsem+Google+Adwords+USA_gaPMG_STR_SEM_Microsoft+Store_B_English_Core_NA_STD_Exact_NA_Google_ALL&s_kwcid=AL!4249!3!209340488374!e!!g!!microsoft&invsrc=search&cl_vend=google&cl_ch=sem&cl_camp=893613004&cl_adg=46247089322&cl_crtv=209340488374&cl_kw=microsoft&cl_pub=google.com&cl_place=&cl_dvt=c&cl_pos=1t1&cl_mt=e&cl_gtid=kwd-11656221&cl_pltr=&cl_dim0=WUP83AAAAF2blUGb:20170728193732:s&ef_id=WUP83AAAAF2blUGb:20170728193732:s">
+    <img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="Microsoft" width="600" height="400">
+  </a>
+  <div class="desc">Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. It develops, manufactures, licenses, supports and sells computer software, consumer electronics, personal computers, and services.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.dropbox.com/login">
+    <img src="https://pbs.twimg.com/profile_images/662300942335737857/vJbiuGpn.png" alt="Dropbox" width="600" height="400">
+  </a>
+  <div class="desc">Dropbox is a file hosting service operated by American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.</div>
+</div>
+</body>
