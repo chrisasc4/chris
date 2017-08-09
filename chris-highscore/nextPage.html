@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chris's Rock, Paper and Scissors Game</title>
+    <script src="main.js"></script>
+    <script src="style.css"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+
+        </script>
+    <style>
+        body {
+            background: white;
+        }
+
+        img {
+            width: 30%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <button type="button" id="startBtn"><a href="https://imgflip.com/memegenerator">High Score</a></button><br>
+    <element onclick="startBtn">
+
+
+        <div class="choose" align="center">
+            <h1 id="question"> Choose a Move!</h1>
+            <img alt="Rock" src="http://3.bp.blogspot.com/-KHc70esXncY/T76RN0I7mKI/AAAAAAAAOwg/8xUnLhIcHGU/s1600/key%2Bholder.jpg" id="rock">
+            <img alt="Paper" src="http://cdn.dick-blick.com/items/102/40/10240-1009-1-2ww-m.jpg" id="paper">
+            <img alt="Scissors" src="https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages01-004253_FI_RECYCLED_8_HR._CB338748818_.jpg"
+                id="scissors">
+        </div>
+        <script>
+            $("img").click(function () {
+                $(this).siblings().slideUp();
+            });
+        </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDleAbwuRAHrRptOZ6nrcpeHkFSgZESPDI",
+            authDomain: "rpf-game.firebaseapp.com",
+            databaseURL: "https://rpf-game.firebaseio.com",
+            projectId: "rpf-game",
+            storageBucket: "",
+            messagingSenderId: "45087546210"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="rps.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Chris's Rock, Paper, and Scissors Game</title>
+    <script src="main.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+         ::selection {
+            background: #fb9fe5;
+            text-shadow: none
+        }
+
+        a {
+            color: #0088CC;
+            text-decoration: none;
+            outline: 0
+        }
+
+        a:hover {
+            color: #005580
+        }
+
+        a img {
+            border: none
+        }
+
+        img {
+            max - width: 100%
+        }
+
+        html {
+            font - size: 100%
+        }
+
+        body {
+            padding: 5%;
+            font: 300 1.25em/1.6 monospace;
+            background: url("https://media.giphy.com/media/zrYgRi8JrMeC4/giphy.gif");
+            color: black;
+        }
+
+        h1 {
+            font - family: "Helvetica Neue", sans-serif;
+            line-height: 5;
+            font-weight: 10;
+            margin-bottom: 1em;
+        }
+
+        .game {
+            padding: 2em;
+            background: greenyellow;
+        }
+
+        h2 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Game</h1>
+
+    <div class="game">
+
+        <script>
+            var score = 0;
+            var userChoice = prompt("Do you choose rock, paper or scissors?");
+            if (!userChoice) {
+
+                document.write("<p>Player 1, you cheated! Refresh this screen and fight like a man.</p>");
+            } else {
+
+                document.write("<p>Player 1:" + " " + userChoice + "</p>");
+            }
+
+
+
+
+            ;
+
+            var compare = function (choice1) {
+                if (choice1 === c1991) {
+                    return "Correct"
+
+                }
+
+
+                document.write("<br><hr><br>" + results);
+                $("body").append("<h2 id='score' >Score: <h2><hr>" + score);
+                //$("#score").text(score);
+                console.log(score);
+        </script>
+
+    </div>
+    <!--<div class="score-num"><span id="loses">0</span> <br />loses</div>
+    </div>-->
+    <a href="in.html">
+    <button type="reset" id="reset" onclick="reset()">Restart</button>
+    <button onclick="updateDB(score)">Submit<button>
+    </aside>
+    </div>
+    </div>
+</body>
+
+</html>

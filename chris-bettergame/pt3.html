@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC-t8-A2OiZNDdUZLxb9N4VvMHAqWVoMdw",
+            authDomain: "better-game-project.firebaseapp.com",
+            databaseURL: "https://better-game-project.firebaseio.com",
+            projectId: "better-game-project",
+            storageBucket: "",
+            messagingSenderId: "288807497501"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="game.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Super Smash Bro.s Fan Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+         ::selection {
+            background: #fb9fe5;
+            text-shadow: none
+        }
+
+        a {
+            color: #0088CC;
+            text-decoration: none;
+            outline: 0
+        }
+
+        a:hover {
+            color: #005580
+        }
+
+        a img {
+            border: none
+        }
+
+        img {
+            max - width: 100%
+        }
+
+        html {
+            font - size: 100%
+        }
+
+        body {
+
+            font: 300 1.25em/1.6 monospace;
+            background: url("https://media.giphy.com/media/13nN1XlbXhqqTC/giphy.gif");
+
+            color: white;
+        }
+
+        h1 {
+            font - family: "Helvetica Neue", sans-serif;
+            line-height: 5;
+            font-weight: 10;
+            margin-bottom: 1em;
+        }
+
+        .game {
+            padding: 2em;
+            background: transparent;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        .game2 {
+            padding: 2em;
+            background: transparent;
+        }
+
+        .game3 {
+            padding: 2em;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sonic Quiz</h1>
+
+    <div class="game">
+
+        <script>
+            var questions = ["What colors", "fldkjfk"];
+            var answers = ["red", ""];
+            var i = 0; // Index that keeps track of the current question/answer
+            // When you click the next button
+            // var answer = prompt(questions[i]);
+            // if answer is correct (use answers array)
+            //  display correct
+            // else display incorrect
+            // i++
+
+
+            var txt;
+            var person = prompt("When was the first Sonic game released?");
+            if (person == 1991) {
+                document.write("<h2>Correct</h2>");
+            }
+            else {
+                document.write("<h2>Incorrect</h2>");
+            }
+        </script>
+
+    </div>
+    <!--<div class="score-num"><span id="loses">0</span> <br />loses</div>
+    </div>-->
+    <a href="pt3.html">
+
+        <!--<button onclick="updateDB(score)">Submit<button>-->
+        <button type="startBtn" id="startBtn">Next</button>
+        <div class="game2">
+            <script>
+                var txt;
+                var person = prompt("Who is Sonic's main villian?");
+                if (person == "Doctor Eggman") {
+                    document.write("<h2>Correct</h2>");
+                }
+                else {
+                    document.write("<h2>Incorrect</h2>");
+                }
+            </script>
+        </div>
+        <button type="startBtn" id="startBtn">Next</button>
+        <div class="game3">
+            <script>
+                var txt;
+                var person = prompt("What are Sonic's colors?");
+                if (person == "Blue and Red") {
+                    document.write("<h2>Correct</h2>");
+                }
+                else {
+                    document.write("<h2>Incorrect</h2>");
+                }
+            </script>
+        </div>
+        <button type="startBtn" id="startBtn">Next</button>
+        <div class="game3">
+            <script>
+                var txt;
+                var person = prompt("What kind of animal is Sonic?");
+                if (person == "Hedgehog") {
+                    document.write("<h2>Correct</h2>");
+                }
+                else {
+                    document.write("<h2>Incorrect</h2>");
+                }
+            </script>
+        </div>
+        <button onclick="updateDB(score)">Submit<button>
+    </aside>
+    </div>
+    </div>
+</body>
+
+</html>
