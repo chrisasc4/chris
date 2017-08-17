@@ -1,31 +1,28 @@
 
 body{
 
-background:url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+background:#e9967a	;
+
             
   
 }
 .container{
-    color: white;
-    background-color: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");;
+    background-color: #e9967a;
 ;
 }
 
 #yourNameGroup{
-    background-color: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif"); ;
+    background-color: #e9967a ;
 ;
 }
-.lead{
-    color: white;
-}
 .form-control{
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .btn-primary{
-    color: white;
-    background-color: blue;
-    border-color: blue;
+    color: #fff;
+    background-color: orange;
+    border-color: #008b8b;
     display: inline-block;
     font-weight: 400;
     text-align: center;
