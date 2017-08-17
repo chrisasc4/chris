@@ -49,14 +49,20 @@
 
         <!-- Submit your name section -->
         <div id="yourNameGroup">
-            <h2>Submit Your Name</h2>
-            <div class="form-group">
-                <label for="nameInput">Your Name</label>
-                <input type="text" class="form-control" id="complainerName" placeholder="Enter your name">
+
+            <div class="nameGroup">
+                <div class="form-group">
+                    <h2>Submit Your Name</h2>
+                    <label for="nameInput">Your Name</label>
+                    <input type="text" class="form-control" id="complainerName" placeholder="Enter your name">
+                </div>
+                <button id="submitName" type="submit" class="btn btn-primary">Submit</button>
             </div>
-            <button id="submitName" type="submit" class="btn btn-primary">Submit</button>
-            <hr>
+            <!--<div class="login-logout"></div>-->
+
         </div>
+
+        <hr>
 
         <!-- Send a message section -->
         <h2>Send a Message</h2>
@@ -81,11 +87,11 @@
         <div class="row">
             <div class="col-sm-6">
                 <h2>Users</h2>
-                <ul id="users"></ul>
+                <ol id="users"></ol>
             </div>
             <div class="col-sm-6">
                 <h2>Messages</h2>
-                <ul id="messages"></ul>
+                <ol id="messages"></ol>
             </div>
         </div>
 

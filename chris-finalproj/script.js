@@ -26,15 +26,28 @@ $(function () {
     $("#submitName").click(function () {
         complainer = $("#complainerName").val();
         users.child(complainer).set({ loggedIn: true });
-        $("#yourNameGroup").empty();
-        $("#yourNameGroup").append('<button id="removeName" type="submit" class="btn btn-primary">Log Out</button>');
+        $(".nameGroup").hide();
+        var logOutBtn = '<button id="removeName" type="submit" class="btn btn-link">Log Out</button>';
+        $("#yourNameGroup").append(logOutBtn);
 
         $('body').on('click', '#removeName', function () {
             console.log("click");
             // Remove this user from Firebase
             var userRef = users.child(complainer).remove();
             // Remove log out button
+            $("#removeName").hide();
+            $("#yourNameGroup").append("Please refresh the page to log back in!");
         });
+
+        // $('body').on('click', '#addName', function () {
+        //     $(".nameGroup").show();
+        //     complainer = $("#complainerName").val();
+        //     $("#addName").hide();
+        //     console.log("click");
+        //     // Remove this user from Firebase
+        //     var userRef = users.child(complainer).addBack({ loggedIn: true });
+
+        // });
 
         complaints.on("value", function (snapshot) {
             $("#messages").empty();
