@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="style3.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDl9bRVmt0kkQjkuQtwNobsTY2C12a2ICE",
+            authDomain: "poll-acad0.firebaseapp.com",
+            databaseURL: "https://poll-acad0.firebaseio.com",
+            projectId: "poll-acad0",
+            storageBucket: "poll-acad0.appspot.com",
+            messagingSenderId: "204707138612"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="main3.js"></script>
+
+</head>
+
+<body>
+    <style>
+        body {
+            -webkit-animation: colorchange 60s infinite;
+            animation: colorchange 60s infinite;
+        }
+
+
+        @-webkit-keyframes colorchange {
+
+            0% {
+                background: #33FFF3;
+            }
+            25% {
+                background: red;
+            }
+            50% {
+                background: green;
+            }
+            75% {
+                background: orange;
+            }
+            100% {
+                background: purple;
+            }
+        }
+
+
+        @keyframes colorchange {
+            0% {
+                background: #33FFF3;
+            }
+            25% {
+                background: red;
+            }
+            50% {
+                background: green;
+            }
+            75% {
+                background: #DC7633;
+            }
+            100% {
+                background: purple;
+            }
+        }
+
+        #submitBtn {
+            background-color: white;
+            color: black;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 2px 5px;
+        }
+    </style>
+
+    <div id="wrapper">
+
+        <div id="menu">
+
+            <h1>Suggestion</h1>
+            <h2><b>Request: Is This Message Appropiate?</b></h2>
+
+
+
+
+            <BR>
+            <div class="userContainer">
+                <form>
+                    <div class="textContainer">
+
+                        <a href="demo.html">
+                              <input type="reset" id="yesbtn" onclick="updateDB();" value="Yes">
+                        
+  <input type="reset" id="nobtn" onclick="updateDB();" value="No">
+                        
+                    </div>
+                </form>
+                  
+            </div>
+           <hr> <button type="button" id="submitBtn">Next</button></a></hr>
+</body>
+
+</html>
